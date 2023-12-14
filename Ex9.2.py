@@ -1,4 +1,11 @@
+#Из созданных на уроке и в рамках домашнего задания функций, соберите пакет для работы с файлами.
 
+#Создайте файл __init__.py и запишите в него все функции:
+#save_to_json,
+#find_roots,
+#generate_csv_file.
+
+code_to_write = '''
 import csv
 import json
 import random
@@ -35,3 +42,7 @@ def generate_csv_file(file_name, rows):
         for i in range(rows):
             row = [random.randint(1, 1000) for _ in range(3)]
             writer.writerow(row)
+'''
+
+with open("__init__.py", "w") as init_file:
+    init_file.write(code_to_write)
