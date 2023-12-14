@@ -1,4 +1,10 @@
+# Создайте файл __init__.py и запишите в него все функции:
+# get_dir_size,
+# save_results_to_json,
+# save_results_to_csv,
+# save_results_to_pickle, traverse_directory.
 
+code_to_write = '''
 import os
 import json
 import csv
@@ -42,3 +48,7 @@ def traverse_directory(directory):
             size = get_dir_size(path)
             results.append({'Path': path, 'Type': 'Directory', 'Size': size})
     return results
+'''
+
+with open("__init__.py", "w") as init_file:
+    init_file.write(code_to_write)
